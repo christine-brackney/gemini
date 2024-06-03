@@ -1,0 +1,83 @@
+% Gemini theme
+% https://github.com/anishathalye/gemini
+
+% ====================
+% Definitions
+% ====================
+
+% From https://csun.edu/identity/design-guidelines
+
+% -- Primary Colors --
+\definecolor{csunHeroRed}{RGB}{210, 32, 48}
+% black
+% white
+
+% -- Secondary Colors --
+\definecolor{csunSecRed}{RGB}{230, 75, 54}
+\definecolor{csunCoolGray}{RGB}{85, 52, 29}
+\definecolor{csunMedGray}{RGB}{171, 169, 169}
+\definecolor{csunLightGray}{RGB}{189, 197, 195}
+
+% -- Tertiary Colors --
+\definecolor{csunGoldenYellow}{RGB}{253, 191, 86}
+\definecolor{csunSeaGreen}{RGB}{130, 206, 201}
+\definecolor{csunAzure}{RGB}{44, 165, 218}
+\definecolor{csunPeriwinkle}{RGB}{146, 161, 205}
+\definecolor{csunSubtainGreen}{RGB}{32, 146, 70}
+\definecolor{csunTerBurgundy}{RGB}{152, 27, 35}
+\definecolor{csunLibaryBeige}{RGB}{216, 210, 196}
+\definecolor{csunIris}{RGB}{91, 76, 147}
+
+% -- Web Colors --
+\definecolor{csunAccessibleRed}{RGB}{173, 0, 29}
+
+% -- Most of these are too dark for backgrounds but we can mix in white to get good background colors.
+\colorlet{lightAlertBG}{csunLibaryBeige!50} % this is 50% LibaryBeige 50% white
+\colorlet{lightExampleBG}{csunAzure!10} % this is 10% Azure 90% white
+
+% ====================
+% Theme
+% ====================
+
+% Basic colors
+\setbeamercolor{palette primary}{fg=black,bg=white}
+\setbeamercolor{palette secondary}{fg=black,bg=white}
+\setbeamercolor{palette tertiary}{bg=black,fg=white}
+\setbeamercolor{palette quaternary}{fg=black,bg=white}
+\setbeamercolor{structure}{fg=csunAccessibleRed}
+
+% Headline
+\setbeamercolor{headline}{fg=white,bg=csunHeroRed}
+\setbeamercolor{headline rule}{bg=csunSecRed}
+
+% Block
+\setbeamercolor{block title}{fg=csunAccessibleRed,bg=white}
+\setbeamercolor{block separator}{bg=csunTerBurgundy}
+\setbeamercolor{block body}{fg=black,bg=white}
+
+% Alert Block
+\setbeamercolor{block alerted title}{fg=csunAccessibleRed,bg=lightAlertBG}
+\setbeamercolor{block alerted separator}{bg=csunTerBurgundy}
+\setbeamercolor{block alerted body}{fg=black,bg=lightAlertBG}
+
+% Example Block
+\setbeamercolor{block example title}{fg=csunAccessibleRed,bg=lightExampleBG}
+\setbeamercolor{block example separator}{bg=csunTerBurgundy}
+\setbeamercolor{block example body}{fg=black,bg=lightExampleBG}
+
+% Heading
+\setbeamercolor{heading}{fg=black}
+
+% Itemize
+\setbeamercolor{item}{fg=csunAccessibleRed}
+
+% Bibliography
+\setbeamercolor{bibliography item}{fg=black}
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=black}
+\setbeamercolor{bibliography entry note}{fg=black}
+\setbeamertemplate{bibliography entry article}{}
+\setbeamertemplate{bibliography entry title}{}
+\setbeamertemplate{bibliography entry location}{}
+\setbeamertemplate{bibliography entry note}{}
